@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SwiperJs</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <h1><span>Swiper</span>Js</h1>
+                <p>L'objectif de cet exercice est de faire un carrousel avec les configurations demandées dans l'exercice</p>
+            </div>
+        </header>
+        <section class="number number-1">
+            <div class="wrapper">
+                <header class="number__header">
+                    <h2>Numéro 1 - Le standard</h2>
+                    <p>Aucune configuration spéciale n'est requise. Suivez seulement les étapes suivantes:</p>
+                    <ul class="rules">
+                        <li>
+                            <h4>1. HTML</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        Ajuster le HTML pour respecter ce que demande
+                                        <a href="https://swiperjs.com/swiper-api#swiper-full-html-layout" target="_blank"> la documentation de SwiperJs </a>
+                                    </span>
+                                </li>
+                                <li>Ajouter une classe au carrousel ".simple"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2. CSS</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        <a href="https://swiperjs.com/swiper-api#scss-styles" target="_blank"> Charger le SCSS </a>
+                                        nécessaire pour le fonctionnement de Swiper
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>3. JavaScript</h4>
+                            <ul>
+                                <li>Importer la librairie Swiper dans le fichier Main.js</li>
+                                <li>
+                                    <span>
+                                        Mettre le
+                                        <a href="https://swiperjs.com/swiper-api#initialize-swiper" target="_blank"> code de base </a>
+                                        pour faire fonctionner Swiper et cibler le carrousel .simple
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>4. CSS</h4>
+                            <ul>
+                                <li>Dans le fichier swiper.scss faite en sorte que .simple prennent tout l'espace</li>
+                                <li>Faite en sorte que les images dans .simple prennent tout l'espace</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </header>
+                <div class="number__content">
+                    <!-- VOTRE CONTENU ICI-->
+                    <img src="https://picsum.photos/1080/480?random=1" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=2" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=3" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=4" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=5" alt="slide 1" />
+                </div>
+            </div>
+        </section>
+        <section class="number number-2">
+            <div class="wrapper">
+                <header class="number__header">
+                    <h2>Numéro 2 - Plusieurs slides</h2>
+                    <p>Les mêmes configuration que le numéro 1, mais avec plusieurs slides(2) à l'écran en même temps:</p>
+                    <ul class="rules">
+                        <li>
+                            <h4>1. HTML</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        Ajuster le HTML pour respecter ce que demande
+                                        <a href="https://swiperjs.com/swiper-api#swiper-full-html-layout" target="_blank"> la documentation de SwiperJs </a>
+                                    </span>
+                                </li>
+                                <li>Ajouter une classe au carrousel ".multiple"</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4>2. JavaScript</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        Mettre le
+                                        <a href="https://swiperjs.com/swiper-api#initialize-swiper" target="_blank"> code de base </a>
+                                        pour faire fonctionner Swiper et cibler le carrousel .multiple
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#param-slidesPerView" target="_blank">paramètre</a> pour avoir 2
+                                        slides à l'écran en même temps
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>4. CSS</h4>
+                            <ul>
+                                <li>Dans le fichier swiper.scss faite en sorte que .multiple prennent toute l'espace</li>
+                                <li>Faite en sorte que les images dans .multiple prennent toute l'espace</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </header>
+                <div class="number__content">
+                    <!-- VOTRE CONTENU ICI-->
+                    <img src="https://picsum.photos/1080/480?random=1" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=2" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=3" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=4" alt="slide 1" />
+                    <img src="https://picsum.photos/1080/480?random=5" alt="slide 1" />
+                </div>
+            </div>
+        </section>
+        <section class="number number-3">
+            <div class="wrapper">
+                <header class="number__header">
+                    <h2>Numéro 3 - Plusieurs cartes</h2>
+                    <p>Les mêmes configuration que le numéro 2, mais avec du contenu autre que des images</p>
+                    <ul class="rules">
+                        <li>
+                            <h4>1. HTML</h4>
+                            <ul>
+                                <li>
+                                    <span> Ajouter la classe .swiper-slide aux cartes(.card) </span>
+                                </li>
+                                <li>Ajouter une classe au carrousel ".swiper-card"</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4>2. JavaScript</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        Mettre le
+                                        <a href="https://swiperjs.com/swiper-api#initialize-swiper" target="_blank"> code de base </a>
+                                        pour faire fonctionner Swiper et cibler le carrousel .swiper-card
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#param-slidesPerView" target="_blank">paramètre</a> pour avoir 3
+                                        slides à l'écran en même temps
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#param-spaceBetween" target="_blank">paramètre</a> pour avoir 30px
+                                        d'espace entre chaque carte
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>4. CSS</h4>
+                            <ul>
+                                <li>Dans le fichier swiper.scss faite en sorte que .swiper-card prennent tout l'espace</li>
+                                <li>Faite en sorte que les images dans .swiper-card prennent tout l'espace</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </header>
+                <div class="number__content">
+                    <!-- VOTRE CONTENU ICI-->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=1" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=2" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=3" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=4" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=5" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=6" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="number number-4">
+            <div class="wrapper">
+                <header class="number__header">
+                    <h2>Numéro 4 - Plusieurs cartes</h2>
+                    <p>Les mêmes configuration que le numéro 3, mais avec une pagination</p>
+                    <ul class="rules">
+                        <li>
+                            <h4>1. HTML</h4>
+                            <ul>
+                                <li>
+                                    <span> Ajouter la classe .swiper-slide aux cartes(.card) </span>
+                                </li>
+                                <li>Ajouter une classe au carrousel ".swiper-pager"</li>
+                                <li>Ajouter le html nécessaire pour avoir une pagination</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2. CSS</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        <a href="https://swiperjs.com/swiper-api#scss-styles" target="_blank"> Charger le SCSS </a>
+                                        nécessaire pour la pagination
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h4>3. JavaScript</h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        Mettre le
+                                        <a href="https://swiperjs.com/swiper-api#initialize-swiper" target="_blank"> code de base </a>
+                                        pour faire fonctionner Swiper et cibler le carrousel .swiper-pager
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#pagination" target="_blank">paramètre</a> pour avoir une pagination
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#param-slidesPerView" target="_blank">paramètre</a> pour avoir 3
+                                        slides à l'écran en même temps
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        Ajouter un <a href="https://swiperjs.com/swiper-api#param-spaceBetween" target="_blank">paramètre</a> pour avoir 30px
+                                        d'espace entre chaque carte
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>4. CSS</h4>
+                            <ul>
+                                <li>Dans le fichier swiper.scss faite en sorte que .swiper-pager prennent tout l'espace</li>
+                                <li>Faite en sorte que les images dans .swiper-pager prennent tout l'espace</li>
+                                <li>Faite en sorte que la pagination soit sous le carrousel (inspectez l'élément) retirer le positionnement</li>
+                                <li>Faite en sorte que les points soit de couleur blanche</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </header>
+                <div class="number__content">
+                    <!-- VOTRE CONTENU ICI-->
+                    <div class="swiper swiper-pager">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=1" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=2" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=3" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=4" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=5" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <div class="card__media">
+                                    <img src="https://picsum.photos/1080/480?random=6" alt="slide 1" />
+                                </div>
+                                <div class="card__content">
+                                    <div>
+                                        <h2>Oahu, Hawaii</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae animi assumenda autem suscipit molestias
+                                            obcaecati eius iure, veniam magni officiis laborum quam. Reiciendis, minus aliquam ea nam, omnis doloremque quas
+                                            repudiandae, unde aut perspiciatis soluta.
+                                        </p>
+                                    </div>
+
+                                    <span>Voir plus</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
