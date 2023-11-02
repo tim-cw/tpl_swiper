@@ -1,10 +1,10 @@
 //FONTS
 // ici sont chargé les fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Jomolhari&family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
-@import 'tools/cover';
+@import 'tools/typo';
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
@@ -27,10 +27,13 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-@import 'components/default';
-@import 'components/swiper';
+@import 'components/base';
+@import 'components/exercice';
+@import 'components/icons';
+@import 'components/carrousel';
+@import 'components/bloc';
 @import 'components/card';
+@import 'components/button';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
-@import 'utilities/accessibility';

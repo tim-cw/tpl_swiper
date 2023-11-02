@@ -1,0 +1,332 @@
+<dialog id="num01-maquette">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num1-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num02-maquette">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num2-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num03-maquette">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num3-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num04-maquette">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num4-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num05-maquette">
+    <a href="#num05" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Maquette</h3>
+        <video src="assets/images/ex1/num5-demo.mp4" autoplay muted loop></video>
+        <p class="close">Cliquez à l'extérieur pour fermer la fenêtre</p>
+    </div>
+</dialog>
+<dialog id="num01-explication">
+    <a href="#num01" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Réalisation</h3>
+        <p>
+            Pour la réalisation de ce numéro, les bases de la structure HTML, SCSS, et JavaScript pour créer un carrousel avec SwiperJs ont été démontrées en
+            classe avec le professeur. Vous devez maintenant les reprendre par vous-mêmes en utilisant vos notes et la documentation de l'API.
+        </p>
+        <h3>Swiper</h3>
+        <ul>
+            <li>Avec aucune option</li>
+        </ul>
+        <h3>HTML</h3>
+        <p>Respectez la structure HTML de Swiper et supprimez les éléments inutiles.</p>
+        <h3>CSS</h3>
+        <p>Assurez-vous de charger les styles de swiper</p>
+        <h3>STYLE POUR LE NUMÉRO</h3>
+        <ul>
+            <li>
+                Pour chacune des diapositives (.swiper-slide)
+                <ul>
+                    <li>Ajuster la couleur d'arrière-plan pour --color-primary</li>
+                    <li>Assurez-vous d'avoir une hauteur minimum de 40vh</li>
+                    <li>Faites-en sorte que le texte soit centré dans l'espace et en majuscule</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>JAVASCRIPT</h3>
+        <p>Assurez-vous d'ajouter le code JavaScript pour initialiser un carrousel dans la méthode init().</p>
+        <h3>Réusinage</h3>
+        <p>Nous allons maintenant organiser votre JavaScript afin de permettre plusieurs instances de Swiper et préparer nos éventuels prochains numéros.</p>
+        <ul>
+            <li>Dans le HTML, ajoutez la classe .js-swiper-base à votre div.swiper.</li>
+            <li>
+                Dans le JS,
+                <ul>
+                    <li>
+                        Créez une méthode initSwiperBase et déplacez votre code d'initialisation de Swiper à l'intérieur de cette méthode. Appelez votre méthode
+                        dans votre méthode init() (Regardez comment la méthode init est appellée du constructor).
+                    </li>
+                    <li>Dans votre méthode initSwiperBase, créez une variable target qui sélectionne dans la page votre élément swiper .js-swiper-base.</li>
+                    <li>Dans votre new Swiper(), utilisez votre nouvelle variable target comme cible pour créer le Swiper (premier paramètre).</li>
+                </ul>
+            </li>
+        </ul>
+        <details>
+            <summary>Vous avez maintenant terminé ce numéro. Cliquez ici pour votre cadeau.</summary>
+            <pre>
+                initSwiperBase() {
+                    const target = document.querySelector('.swiper');
+                    const swiper = new Swiper(target, {});
+                }
+            </pre>
+        </details>
+    </div>
+</dialog>
+<dialog id="num02-explication">
+    <a href="#num02" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Réalisation</h3>
+        <p>
+            Pour la réalisation de ce numéro, nous allons créer un carrousel d'images. En tant que défi supplémentaire, vous devez ajouter une pagination et
+            personnaliser son style au lieu d'utiliser les styles par défaut.
+        </p>
+        <h3>Swiper</h3>
+        <ul>
+            <li>Avoir une pagination</li>
+            <li>Aucune configuration supplémentaire</li>
+        </ul>
+        <h3>HTML - partials/ex1/_num2.html</h3>
+        <p>
+            Respectez la structure HTML de Swiper et supprimez les éléments non nécessaires. En guise d'aide, sachez que vous pouvez ajouter la classe
+            swiper-slide à n'importe quel élément HTML.
+        </p>
+        <h3>CSS</h3>
+        <p>Si vous avez réussi le numéro 1, les styles devraient être chargés.</p>
+        <h3>STYLE POUR LE NUMÉRO</h3>
+        <p>
+            Pour les styles de ce carrousel, vous devriez ajouter une autre classe CSS afin de cibler uniquement ce carrousel. Vous ne devriez pas utiliser .js-
+            en CSS.
+        </p>
+        <ul>
+            <li>Retirer la hauteur minimum sur les slides</li>
+            <li>Retirer la couleur d’arrière plan</li>
+        </ul>
+        <h3>JavaScript</h3>
+        <p>
+            Créez une méthode initSwiperPagination et effectuez les étapes nécessaires pour obtenir une pagination dans le carrousel. Vous pouvez vous inspirer
+            grandement de initSwiperBase.
+        </p>
+        <ul>
+            <li>N'oubliez pas de modifier le querySelector de la variable target pour cibler le nouveau carrousel.</li>
+            <li>En vous référant à la documentation de Swiper, ajoutez la configuration nécessaire pour avoir une pagination.</li>
+            <li>Lorsque vous devez transmettre un élément à la pagination, faites un querySelector à partir de la variable target et non du document.</li>
+        </ul>
+        <p>
+            Vous devriez désormais avoir une pagination dans votre carrousel d'images. Il est essentiel de cibler uniquement la pagination de notre carrousel,
+            sinon il cherchera dans toute la page, ce qui pourrait entraîner des problèmes de fonctionnement pour vos carrousels.
+        </p>
+        <p>
+            Lorsqu'on utilise une variable pour stocker un élément en mémoire et que nous utilisons ensuite cette variable, il est essentiel de s'assurer
+            qu'elle contient bien une valeur existante, sinon cela peut provoquer des erreurs JavaScript. À titre d'exemple, si vous accédez à la deuxième page,
+            vous obtiendrez une erreur car le carrousel n'est pas trouvé. Pour éviter que cela ne provoque des erreurs, nous allons englober notre
+            initialisation de Swiper dans une vérification if(target) {} pour nous assurer que nous avons bien trouvé notre élement HTML swiper.
+        </p>
+        <details>
+            <summary>Cliquez ici pour un autre cadeau.</summary>
+            <pre>
+                if(target) {
+                    const swiper = new Swiper(target, {
+                        pagination: {
+                          el: target.querySelector('.swiper-pagination'),
+                        },
+                      });
+                }                
+            </pre>
+        </details>
+        <h3>Style pour la pagination</h3>
+        <p>
+            Vous devez maintenant personnaliser les styles de la pagination. Nous ne souhaitons pas utiliser la couleur bleue par défaut. Utilisez l'inspecteur
+            pour examiner les éléments et les styles créés par SwiperJs, puis écrasez les styles prédéfinis par Swiper pour personnaliser la pagination.
+        </p>
+        <ul>
+            <li>Changer la couleur de fond des bullets actifs pour -color-primary (il existe une variable)</li>
+            <li>Changer la couleur de fond des bullets inactifs pour -color-primary (il existe une variable)</li>
+            <li>Modifier la largeur et la hauteur des bullets à 10px (il existe une variable)</li>
+            <li>Modifier le positionnement pour que la pagination soit située en dessous du carrousel.</li>
+            <li>Remplacer les coins arrondis des bullets par des coins carrés.</li>
+        </ul>
+        <details>
+            <summary>Cliquez ici pour encore un autre cadeau.</summary>
+            <pre>
+                .swiper-page {
+                    .swiper-slide {
+                        background: none;
+                        min-height: unset;
+                    }
+                    .swiper-pagination {
+                        //retire le position absolute de d'élément
+                        position: static;
+                        --swiper-pagination-bullet-width: 10px;
+                        --swiper-pagination-bullet-height: 10px;
+                        --swiper-pagination-color: var(--color-primary);
+                        --swiper-pagination-bullet-inactive-color: var(--color-primary);
+                    }
+                    .swiper-pagination-bullet {
+                        border-radius: 0;
+                    }
+                }
+            </pre>
+        </details>
+    </div>
+</dialog>
+<dialog id="num03-explication">
+    <a href="#num03" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Réalisation</h3>
+        <p>
+            Pour la réalisation de ce numéro, nous allons créer un carrousel avec des liens. En tant que défi supplémentaire, vous devez ajouter une navigation
+            personnalisée au lieu d'utiliser les styles par défaut. De plus, vous devrez inclure certaines configurations supplémentaires.
+        </p>
+        <h3>Swiper</h3>
+        <ul>
+            <li>Avoir une navigation</li>
+            <li>Avoir 3 slides à la fois</li>
+            <li>Avoir un espace de 30px entre les slides</li>
+        </ul>
+        <h3>HTML - partials/ex1/_num3.html</h3>
+        <p>
+            Respectez la structure HTML de Swiper et supprimez les éléments non nécessaires. Pour vous aider, gardez à l'esprit que vous pouvez ajouter la
+            classe 'swiper-slide' à n'importe quel élément.
+        </p>
+        <h3>CSS</h3>
+        <p>Si vous avez réussi le numéro 1, les styles devraient être chargés.</p>
+
+        <h3>JavaScript</h3>
+        <p>
+            Créez une méthode initSwiperNavigation et effectuez les étapes nécessaires pour obtenir une navigation dans le carrousel. Vous pouvez vous inspirer
+            grandement de initSwiperBase.
+        </p>
+        <ul>
+            <li>N'oubliez pas de modifier le querySelector de la variable target pour cibler le nouveau carrousel.</li>
+            <li>En vous référant à la documentation de Swiper, ajoutez la configuration nécessaire pour avoir une navigation.</li>
+            <li>Lorsque vous devez transmettre un élément à la navigation, faites un querySelector à partir de la variable target et non du document.</li>
+        </ul>
+        <p>
+            Vous devriez maintenant avoir une navigation dans votre carrousel, mais il n'y a qu'un lien affiché à la fois. Référez-vous à la documentation pour
+            découvrir comment ajouter un espacement de 30px entre les slides et comment faire en sorte d'en afficher 3 à la fois.
+        </p>
+        <details>
+            <summary>Cliquez ici pour encore un autre cadeau.</summary>
+            <pre>
+                <img src="https://media.giphy.com/media/26tn8zNgVmit475RK/giphy.gif" alt="Yoda">
+                <p>Besoin d'aide, vous n'avez plus, mes padawans. Les bonnes réponses, vous connaissez déjà.</p>
+            </pre>
+        </details>
+
+        <h3>Style pour la navigation</h3>
+        <p>
+            Vous devez maintenant personnaliser les styles de la pagination. Nous ne souhaitons pas utiliser la couleur bleue par défaut. Utilisez l'inspecteur
+            pour examiner les éléments et les styles créés par SwiperJs, puis écrasez les styles prédéfinis par Swiper pour personnaliser la pagination.
+        </p>
+        <ul>
+            <li>Changer la couleur de l'icône de la navigation pour --color-black (il existe une variable)</li>
+        </ul>
+    </div>
+</dialog>
+<dialog id="num04-explication">
+    <a href="#num04" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Réalisation</h3>
+        <p>
+            Pour la réalisation de ce numéro, nous allons créer un carrousel avec des carte. En tant que défi supplémentaire, vous devez ajouter une pagination
+            personnalisée au lieu d'utiliser les styles par défaut. De plus, vous devrez inclure certaines configurations supplémentaires.
+        </p>
+        <h3>Swiper</h3>
+        <ul>
+            <li>Avoir une pagination</li>
+            <li>Avoir 4 slides à la fois</li>
+            <li>Avoir un espace de 30px entre les slides</li>
+            <li>Faire en sorte que le carrousel loop à l’infini</li>
+        </ul>
+        <h3>HTML - partials/ex1/_num4.html</h3>
+        <p>
+            Respectez la structure HTML de Swiper et supprimez les éléments non nécessaires. Pour vous aider, gardez à l'esprit que vous pouvez ajouter la
+            classe 'swiper-slide' à n'importe quel élément.
+        </p>
+        <h3>CSS</h3>
+        <p>Si vous avez réussi le numéro 1, les styles devraient être chargés.</p>
+        <h3>Style du numéro</h3>
+        <p>Vous avez vu comment réaliser ce numéro dans un exercice précédent. Voici quelques détails pour vous aider avec les styles.</p>
+        <ul>
+            <li>Les styles de card et card__media sont les mêmes que la structure qu'on vous propose depuis le début de la session</li>
+            <li>
+                Sur les card__content
+                <ul>
+                    <li>Bordure: 1px color-bg-primary solid</li>
+                    <li>Marge interne: 20px</li>
+                    <li>Titre: pas de marge</li>
+                    <li>Paragraphe: font-size de 14px</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>JavaScript</h3>
+        <p>
+            Créez une méthode initSwiperLoop et effectuez les étapes nécessaires pour obtenir une pagination dans le carrousel. Vous pouvez vous inspirer
+            grandement de initSwiper.
+        </p>
+        <ul>
+            <li>N'oubliez pas de modifier le querySelector de la variable target pour cibler le nouveau carrousel.</li>
+            <li>En vous référant à la documentation de Swiper, ajoutez la configuration nécessaire pour avoir une pagination.</li>
+            <li>Lorsque vous devez transmettre un élément à la pagination, faites un querySelector à partir de la variable target et non du document.</li>
+        </ul>
+        <p>
+            En vous référant à la documentation, vous devez apprendre comment ajouter un espacement de 30px entre les slides, comment afficher 4 slides à la
+            fois, et comment faire en sorte que le carrousel boucle à l'infini.
+        </p>
+    </div>
+</dialog>
+<dialog id="num05-explication">
+    <a href="#num05" class="dialog__close"></a>
+    <div class="dialog__content">
+        <h3>Réalisation</h3>
+        <p>
+            Pour la réalisation de ce numéro, vous devez faire preuve d'indépendance. Utilisez les mêmes techniques que celles des numéros précédents pour
+            accomplir ce numéro.
+        </p>
+        <h3>Swiper</h3>
+        <ul>
+            <li>Avoir une navigation de couleur noir</li>
+            <li>Avoir un espace de 30px entre les slides</li>
+            <li>
+                Le carrousel doit s'ajuster au taille d’écran (pas besoin de media query, regardez la documentation)
+                <ul>
+                    <li>Par défaut: 1.5 slides à la fois</li>
+                    <li>480 et plus: 2.5 slides à la fois</li>
+                    <li>768 et plus: 3 slides à la fois</li>
+                    <li>1024 et plus: 5 slides à la fois</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Styles des slides</h3>
+        <ul>
+            <li>Doit prendre tout l'espace</li>
+            <li>
+                Garder un
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio" target="_blank">ratio</a>
+                de 1 pour 1. De cette manière, il restera carrer en tout temps
+            </li>
+        </ul>
+    </div>
+</dialog>

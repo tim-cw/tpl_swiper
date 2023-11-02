@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CW3 - Semaine 09 - SwiperJs</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <section class="exercice">
+            <div class="wrapper">
+                <h1>.:: Introduction à la librairie SwiperJs</h1>
+
+                <section class="number" id="num01">
+                    <div class="number__header">
+                        <h2>
+                            numéro 1 -
+                            <span>La base</span>
+                        </h2>
+                        <p>Cet exercice vous apprendra à utiliser la librairie SwiperJS pour créer des carrousels interactifs dans une page web.</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num01-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num01-explication" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/ex1/_num1.html" %}</div>
+                </section>
+                <section class="number" id="num02">
+                    <div class="number__header">
+                        <h2>
+                            numéro 2 -
+                            <span>La pagination</span>
+                        </h2>
+                        <p>Cette exercice vous fera découvrir la pagination de SwiperJS</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num02-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num02-explication" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/ex1/_num2.html" %}</div>
+                </section>
+                <section class="number" id="num03">
+                    <div class="number__header">
+                        <h2>
+                            numéro 3 -
+                            <span>La navigtion</span>
+                        </h2>
+                        <p>Cette exercice vous fera découvrir la navigation et la configuration de certain paramètres de SwiperJS</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num03-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num03-explication" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">
+                        <!-- inclure votre partials de l'exercice 2 ici -->
+                        {% include "_partials/ex1/_num3.html" %}
+                    </div>
+                </section>
+                <section class="number" id="num04">
+                    <div class="number__header">
+                        <h2>
+                            numéro 4 -
+                            <span>Loop</span>
+                        </h2>
+                        <p>Cette exercice vous fera découvrir la loop et la configuration de certain paramètres de SwiperJS</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num04-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num04-explication" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/ex1/_num4.html" %}</div>
+                </section>
+                <section class="number" id="num05">
+                    <div class="number__header">
+                        <h2>
+                            numéro 5 -
+                            <span>Expérimentation</span>
+                        </h2>
+                        <p>Cette exercice vous fera découvrir les options de responsive de SwiperJS</p>
+                        <h3>Instructions</h3>
+                        <div class="instructions">
+                            <a href="#num05-maquette" class="button--instruction">résultat final</a>
+                            <a href="#num05-explication" class="button--instruction">fiche technique</a>
+                        </div>
+                    </div>
+                    <div class="number__content">{% include "_partials/ex1/_num5.html" %}</div>
+                </section>
+            </div>
+        </section>
+        {% include "_partials/dialog/_swiper.html" %}
+    </body>
+</html>

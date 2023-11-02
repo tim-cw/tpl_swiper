@@ -16,11 +16,12 @@ h6 {
 h1 {
     font-size: var(--font-size-h1);
     margin: 0;
+    color: var(--color-primary);
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    text-transform: uppercase;
+    font-family: var(--font-secondary);
 }
 
 h3 {
@@ -37,4 +38,18 @@ h5 {
 
 h6 {
     font-size: var(--font-size-h6);
+}
+
+.bigger {
+    h1 {
+        font-size: calc(var(--font-size-h1) * 2);
+    }
+
+    h2 {
+        font-size: calc(var(--font-size-h2) * 1.5);
+    }
+    
+    .button {
+        font-size: 2rem;
+    }
 }

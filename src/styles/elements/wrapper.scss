@@ -3,22 +3,10 @@
    ========================================================================== */
 
 .wrapper {
-    max-width: $breakpoint-lg;
+    max-width: $breakpoint-md;
     margin: 0 auto;
-}
-@media screen and (max-width: $breakpoint-lg) {
-    .wrapper {
-        padding: 0 20px;
+    width: 100%;
+    @media screen and (max-width: $breakpoint-md) {
+        padding: 0 var(--spacing-md);
     }
-}
-
-// Utilisation du css Layout Grid pour faire le wrapper
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: auto minmax($breakpoint-xs, $breakpoint-md) auto;
-    grid-column-gap: 30px;
-}
-
-.grid-center {
-    grid-column: 2/3;
 }

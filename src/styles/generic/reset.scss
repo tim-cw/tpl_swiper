@@ -6,26 +6,15 @@
 // Références: https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-// img {
-//     max-width: 100%;
-// }
-
-ul {
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
+img {
+    max-width: 100%;
 }
